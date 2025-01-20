@@ -1,0 +1,15 @@
+<div class="main fullWidth">
+    <div class="miniToolB fullWidth main-blue white-color gap05em flex row center-center">
+        <mat-icon >call</mat-icon>
+        <label for="" ><b>011 673 6783</b></label>
+    </div>
+    <mat-toolbar class="flex white-bg  spacearound">
+        <div class="left fullHeight flex center-center">
+            <img class="height80 fullWidth" src="../../../assets/pictures/bergbron.jpg" alt="">
+        </div>
+        <div class="right fullHeight flex center-center gap2em" >
+            <label for="" *ngFor="let item of menuItems">{{item}}</label>
+            <button mat-fab extended class="main-blue">Book Apointment</button>
+        </div>
+      </mat-toolbar>      
+</div>
