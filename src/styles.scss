@@ -3,14 +3,14 @@
 html, body { height: 100%;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Creepster&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Aladin&family=Creepster&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 .main-blue {
     background-color: #12417e !important;
 }
 
 .main-blue-color {
-    color: #12417e;
+    color: #12417e !important;
 }
 
 .white-color {
@@ -18,7 +18,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .white-bg {
-  background-color: white;
+  background-color: white !important;
 }
 
   // Sizes
@@ -57,6 +57,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .wrap{
       flex-wrap: wrap;
   }
+
+  .no-wrap{
+    flex-wrap: nowrap;
+}
   
   .column{
       flex-direction: column !important;

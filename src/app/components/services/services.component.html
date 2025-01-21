@@ -1,0 +1,9 @@
+<div class="main flex center-center column gap2em">
+        <h1 class="main-blue-color">Our medical services</h1>
+        <div class="allCards flex wrap center-center">
+            <div class="mini flex column center-center" *ngFor="let item of cards">
+                <img [src]="item.img" alt="">
+                <label for="" class="fz18px textCenter main-blue-color">{{item.text}}</label>
+            </div>
+        </div>
+</div>

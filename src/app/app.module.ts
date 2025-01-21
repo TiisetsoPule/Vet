@@ -8,13 +8,17 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MaterialModule } from './modules/material/material.module';
 import { LandingComponent } from './components/landing/landing.component';
 import { BurnerComponent } from './components/burner/burner.component';
+import { ServicesComponent } from './components/services/services.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     LandingComponent,
-    BurnerComponent
+    BurnerComponent,
+    ServicesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

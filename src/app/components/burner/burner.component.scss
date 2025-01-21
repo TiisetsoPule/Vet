@@ -1,5 +1,6 @@
 .main{
     height: 100vh;
+    position: relative;
 }
 
 .left, .right{
@@ -18,3 +19,49 @@ button{
     width: 40%;
 }
 
+.reviewCard{
+    background-color: white;
+    width: 220px;
+    height: 90px;
+
+}
+
+.float{
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+}
+
+.reviewImg{
+    width: 20%;
+}
+
+.reviewText{
+    width: 80%;
+}
+
+.fz15px{
+    font-size: 15px;
+}
+
+.fz12px{
+    font-size: 12px;
+}
+
+  .star-rating {
+    font-size: 24px;
+    color: #fbc02d; /* Gold color */
+  }
+  
+  .full {
+    color: #fbc02d;
+  }
+  
+  .half {
+    color: #fbc02d;
+  }
+  
+  .empty {
+    color: #ccc; /* Gray for empty stars */
+  }
+  
