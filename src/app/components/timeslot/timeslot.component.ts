@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./timeslot.component.scss']
 })
 export class TimeslotComponent {
-
+  constructor(){}
+  selected: Date | null = null;
 }
