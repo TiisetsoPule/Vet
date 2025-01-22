@@ -1,6 +1,6 @@
 <div class="main flex fullWidth">
     <div class="left fullHeight">
-        <img class="fullHeight fullWidth" src="../../../assets/pictures/catanddog.jpg" alt="">
+        <img class="img1" src="../../../assets/pictures/catanddog.jpg" alt="">
     </div>
     <div class="right fullHeight main-blue white-color flex center-center">
         <div class="width80 flex column gap2em center-center">
@@ -12,23 +12,45 @@
     </div>
     <div class="float flex center-center">
         <div class="reviewCard flex gap1em center-center">
-            <div class="reviewImg fullHeight flex center-center"><img class="height80 fullWidth" src="../../../assets/pictures/google.jpg" alt=""></div>
+            <div class="reviewImg fullHeight flex center-center"><img class="height80 fullWidth"
+                    src="../../../assets/pictures/google.jpg" alt=""></div>
             <div class="reviewText flex gap05em column">
                 <label for="" class="fz15px">Google rating</label>
                 <div class="stars flex center-center gap05em">
                     <h3 class="no-margin full">4.6</h3>
                     <div class="star-rating flex center-center">
-                        <mat-icon *ngFor="let star of fullStars">star</mat-icon>                        
-                        <mat-icon *ngIf="hasHalfStar">star_half</mat-icon>
-                        <mat-icon *ngFor="let empty of emptyStars" class="empty">star</mat-icon>                        
-                      </div>
+                        <mat-icon *ngFor="let star of fullStars(rating)">star</mat-icon>
+                        <mat-icon *ngIf="hasHalfStar(rating)">star_half</mat-icon>
+                        <mat-icon *ngFor="let empty of emptyStars(rating)" class="empty">star</mat-icon>
+                    </div>
                 </div>
                 <label for="" class="fz12px">Based on 296 Google reviews</label>
             </div>
         </div>
     </div>
 </div>
-  
-
-
-  
+<div class="googleReviews flex gap05em column">
+    <div class="name flex row center-center white-bg">
+        <div class="nameImg fullHeight"><img class="fullHeight fullWidth" src="../../../assets/pictures/bergbron.jpg"
+                alt=""></div>
+        <div class="nameText fullHeight flex center-center column">
+            <h5 class="no-margin">Bergbron Animal Clinic</h5>
+            <div class="stars flex center-center gap05em">
+                <h3 class="no-margin full"><b>4.6</b></h3>
+                <div class="star-rating flex center-center">
+                    <mat-icon *ngFor="let star of fullStars(rating)">star</mat-icon>
+                    <mat-icon *ngIf="hasHalfStar(rating)">star_half</mat-icon>
+                    <mat-icon *ngFor="let empty of emptyStars(rating)" class="empty">star</mat-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="actualReviews flex gap05em" *ngFor="let review of reviews">
+        <div class="star-rating flex">
+            <mat-icon *ngFor="let star of fullStars(review.rating)">star</mat-icon>
+            <mat-icon *ngIf="hasHalfStar(review.rating)">star_half</mat-icon>
+            <mat-icon *ngFor="let empty of emptyStars(review.rating)" class="empty">star</mat-icon>
+        </div>
+        <label for="" class="fz4">{{review.review}}</label>
+    </div>
+</div>

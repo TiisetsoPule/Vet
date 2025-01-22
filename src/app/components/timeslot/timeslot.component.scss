@@ -17,3 +17,36 @@
 .top{
     height: 15%;
 }
+
+// mat-chip-option{
+//     width: 100px;
+//     height: 40px;
+// }
+
+// mat-chip-listbox{
+//     gap: 6em !important;
+//     display: flex;
+// }
+
+.times{
+    height: 80%;
+}
+
+/* Encapsulated styles using ::ng-deep */
+::ng-deep .times-container {
+    display: flex; /* Required for gap to work */
+    flex-wrap: wrap; /* Allows wrapping of chips to the next line */
+    gap: 2em; /* Applies a 2em gap between chips */
+    background-color: red;
+    height: 100%;
+  }
+  
+  /* Additional chip styling */
+  ::ng-deep .time-chip {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

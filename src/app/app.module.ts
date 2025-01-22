@@ -11,6 +11,7 @@ import { BurnerComponent } from './components/burner/burner.component';
 import { ServicesComponent } from './components/services/services.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TimeslotComponent } from './components/timeslot/timeslot.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TimeslotComponent } from './components/timeslot/timeslot.component';
     BurnerComponent,
     ServicesComponent,
     FooterComponent,
-    TimeslotComponent
+    TimeslotComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
