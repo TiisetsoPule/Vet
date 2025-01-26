@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TimeslotComponent } from './components/timeslot/timeslot.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { TeamComponent } from './components/team/team.component';
+import { HoursComponent } from './components/hours/hours.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TeamComponent } from './components/team/team.component';
     FooterComponent,
     TimeslotComponent,
     ReviewsComponent,
-    TeamComponent
+    TeamComponent,
+    HoursComponent
   ],
   imports: [
     BrowserModule,

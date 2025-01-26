@@ -1,0 +1,10 @@
+<div class="main flex center-center ">
+    <div class="actual white-color column gap05em main-blue width80 halfHeight flex center-center">
+        <label for=""><b>WORKING HOURS</b></label>
+        <hr>
+        <div class="flex row gap3em">
+            <label *ngFor="let time of hours" for="">{{time.day}} {{time.time}}</label>
+        </div>
+
+    </div>
+</div>
