@@ -10,8 +10,8 @@
             <button mat-fab extended class="white-bg main-blue-color"><b>Our Services</b></button>
         </div>
     </div>
-    <div class="float flex center-center">
-        <div class="reviewCard flex gap1em center-center">
+    <div class="float flex center-center cursor">
+        <div class="reviewCard flex gap1em center-center cursor" (click)="showReviews()">
             <div class="reviewImg fullHeight flex center-center"><img class="height80 fullWidth"
                     src="../../../assets/pictures/google.jpg" alt=""></div>
             <div class="reviewText flex gap05em column">
@@ -29,12 +29,16 @@
         </div>
     </div>
 </div>
-<div class="googleReviews flex gap05em column">
+<div class="googleReviews flex gap05em column " *ngIf="show === true">
     <div class="name flex row center-center white-bg">
         <div class="nameImg fullHeight"><img class="fullHeight fullWidth" src="../../../assets/pictures/bergbron.jpg"
                 alt=""></div>
         <div class="nameText fullHeight flex center-center column">
-            <h5 class="no-margin">Bergbron Animal Clinic</h5>
+            <div class="close flex center-center gap05em ">
+                <h5 class="no-margin">Bergbron Animal Clinic</h5>
+                <mat-icon class="gray cursor" (click)="showReviews()">close</mat-icon>
+            </div>
+            <!-- <h5 class="no-margin">Bergbron Animal Clinic</h5> -->
             <div class="stars flex center-center gap05em">
                 <h3 class="no-margin full"><b>4.6</b></h3>
                 <div class="star-rating flex center-center">

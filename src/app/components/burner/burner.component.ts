@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class BurnerComponent {
   rating: number = 4.6; 
   maxStars: number = 5; 
+  show: boolean = false
 
   reviews = [
     {
@@ -42,6 +43,11 @@ export class BurnerComponent {
       review: ' '
     },
   ]
+
+  showReviews(){
+    this.show = !this.show
+    console.log("show", this.show)
+  }
 
   
   fullStars(rating: number) {

@@ -10,10 +10,14 @@
     </div>
     <div class="right fullHeight">
         <h3>Today, ...</h3>
-        <div class="times">
-            <mat-chip-listbox aria-label="Fish selection" class="times-container">
+        <div class="times flex gap 2em">
+            <!-- <mat-chip-listbox aria-label="Fish selection" class="times-container">
                 <mat-chip-option class="time-chip" *ngFor="let time of timeslots">{{time}}</mat-chip-option>
-              </mat-chip-listbox>
+              </mat-chip-listbox> -->
+              <!-- <div> -->
+              <div class="chipNew flex gap2em" *ngFor="let time of timeslots">{{time}}</div>
+
+              <!-- </div> -->
         </div>
     </div>
 
