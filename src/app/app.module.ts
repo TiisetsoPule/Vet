@@ -12,6 +12,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TimeslotComponent } from './components/timeslot/timeslot.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
+import { TeamComponent } from './components/team/team.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
     ServicesComponent,
     FooterComponent,
     TimeslotComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
