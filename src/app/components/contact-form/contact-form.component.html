@@ -1,0 +1,29 @@
+<div class="main flex center-center light-blue-bg">
+    <form class="form main-blue flex center-center gap1em" [formGroup]="contactMeForm">
+        <h1>Send us a message!</h1>
+        <!-- <span class="gapem"></span> -->
+        <!-- <mat-label class="textStart gap2em">Name and Surname</mat-label> -->
+        <mat-form-field appearance="fill" class="width80">
+            <input formControlName="name" matInput placeholder="Enter Your Name and Surname" required>
+            <mat-error *ngIf="contactMeForm.get('name')?.hasError('required')">
+                Name and Surname are required
+            </mat-error>
+        </mat-form-field>
+        <!-- <mat-label>Email</mat-label> -->
+        <mat-form-field appearance="fill" class="width80">
+            <input formControlName="email" matInput placeholder="Enter Your Email" required>
+            <mat-error *ngIf="contactMeForm.get('email')?.hasError('required')">
+                Email is required
+            </mat-error>
+        </mat-form-field>
+        <!-- Message -->
+        <!-- <mat-label>Message</mat-label> -->
+        <mat-form-field appearance="fill" class="width80">
+            <textarea formControlName="text" matInput placeholder="Enter Your Message" required></textarea>
+            <mat-error *ngIf="contactMeForm.get('text')?.hasError('required')">
+                Message is required
+            </mat-error>
+        </mat-form-field>
+        <button class="btnPurple" mat-flat-button (click)="submitMsg()">SUBMIT</button>
+    </form>
+</div>

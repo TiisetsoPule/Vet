@@ -1,0 +1,23 @@
+.main{
+    height: 100vh;
+}
+
+.form{
+    height: 95%;
+    width: 45%;
+    border-radius: 20px;
+    color: white;
+    flex-direction: column;
+}
+
+.textStart{
+    text-align: start !important;
+}
+
+textarea{
+    height: 80px;
+}
+
+.light-blue-bg{
+    background-color: #f1f4f8;
+}

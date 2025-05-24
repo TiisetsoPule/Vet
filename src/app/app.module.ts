@@ -14,6 +14,8 @@ import { TimeslotComponent } from './components/timeslot/timeslot.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { TeamComponent } from './components/team/team.component';
 import { HoursComponent } from './components/hours/hours.component';
+import { ContactFormComponent } from './components/contact-form/contact-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,17 @@ import { HoursComponent } from './components/hours/hours.component';
     TimeslotComponent,
     ReviewsComponent,
     TeamComponent,
-    HoursComponent
+    HoursComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

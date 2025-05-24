@@ -1,5 +1,6 @@
 .main{
     height: 85%;
+    background-color: #f1f4f8;
 }
 
 .left{
@@ -16,6 +17,12 @@
 
 .top{
     height: 15%;
+    width: 60%;
+}
+
+.icon{
+    width: 15%;
+    height: 100%;
 }
 
 mat-chip-option{
@@ -32,27 +39,24 @@ mat-chip-listbox{
     height: 80%;
 }
 
-// /* Encapsulated styles using ::ng-deep */
-::ng-deep .times-container {
-    display: flex; /* Required for gap to work */
-    flex-wrap: wrap; /* Allows wrapping of chips to the next line */
-    gap: 2em; /* Applies a 2em gap between chips */
-    background-color: red;
-    height: 100%;
-  }
-  
-//   /* Additional chip styling */
-//   ::ng-deep .time-chip {
-//     width: 100px;
-//     height: 60px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-  
 .chipNew{
-    background-color: red;
-    width: 50px;
-    height: 30px;
-    border-radius: 15px;
+    height: 50px;
+    border-radius: 25px;
+    width: calc(25% - 10px);
+    border: 1px solid #12417e;
 }
+
+.back-icon {
+  font-size: 36px;
+// size: 80%;
+width: 60px;
+  height: 36px;
+}
+
+  .gap10px{
+      gap: 10px;
+  }
+
+  .none{
+    display: block;
+  }
